@@ -1,0 +1,271 @@
+ body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#26ff00;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#000000;
+  cursor: pointer;
+}
+
+.dark{
+  border:5px solid #65ff00;
+  padding:15px;
+  background:#9cff95;
+  color:#000000;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  border-top:#31e81d 3px solid;
+  background-color:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#31e81d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+ header .current a{
+  color:#2bff2e;
+  font-weight:bold;
+}
+header .highlight{
+  font-size: 39px;
+  color:#26ff00;
+  font-weight:bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+header a:hover{
+  color:#0419f9;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../imgo/laptop.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:53px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:40%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:260px;
+  height:180px;
+}
+.box img{
+  width:260px;
+  height:180px;
+}
+.box-creator img{
+  width:210px;
+  height:220px;
+}
+.box2-creator img{
+  width:210px;
+  height:340px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  border:#31e81d 1px solid;
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#35424a;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+    cursor: pointer;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+#showcases{
+  min-height:400px;
+  background:url('../imgo/about.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#85ff40;
+}
+#showcases h2{
+    font-size:25px;
+    color:#000000;
+    margin-top:250px;
+}
+#canola{
+ color:#66ff55;
+}
+
+.news{
+  animation: blinker 1.5s linear infinite;
+  background: transparent;
+  color: #0015ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: inherit;
+  font-size: 20px;
+}
+.blink{
+  animation: blinker 2.1s linear infinite;
+  color:rgb(0, 255, 17);
+}
+@keyframes blinker{
+  50%{
+    opacity:0;
+  }
+}
+/* form input,textarea{
+  font-size: 20px;
+  min-width: 320px;
+  border-radius:9px;
+  min-height: 30px;
+}
+*/
